@@ -1,0 +1,53 @@
+.filterbar{
+    position: fixed;
+    height: min(10rem, 10vh);
+    background: rgba(38, 0, 254, 0.2);
+    border: 0.3rem solid rgba(255, 254, 254, 0.2);
+    backdrop-filter: blur(5px);
+    color: #eee;
+    right: 0;
+    top: 0;
+    left: 0;
+}
+.filterbarinput__wrapper{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+.filterbar__wrapper{
+    width: 60vw;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+.filterbarinput__wrapper > input{
+    appearance: none;
+
+}
+.filterbarinput__wrapper > label{
+    background: #332FD0;
+    box-shadow: 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.filterbarinput__wrapper > input:checked + label{
+    background: #38E54D;
+    box-shadow: inset 0 0.2rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+
+}
+@media sreen and (max-width: 43.75rem) {
+    .filterbar__wrapper{
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .filterbar{
+        height: auto;
+        padding: 2rem;
+    }
+}

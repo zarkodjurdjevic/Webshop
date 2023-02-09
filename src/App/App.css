@@ -1,0 +1,35 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: sans-serif;
+    background: #9796f0;
+    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
+    background: linear-gradient(to right, #fbc7d4, #9796f0);
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 4rem;
+    flex-wrap: wrap;
+    padding: 4rem;
+}
+@media screen and (max-width: 43.75rem) {
+    #root{
+        padding: 1rem;
+    }
+    body{
+        font-size: 1.6rem;
+    }
+}
